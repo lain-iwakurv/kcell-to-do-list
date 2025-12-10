@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif; /*фулбэк*/
+}
+
+html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    background: #0d0714;
+    font-style: normal;
+    font-weight: 400;
+
+}
+
+.block {
+    background-color: #1d1825;
+    margin: 109px auto 109px auto;
+    border-radius: 20px;
+    width: 583px;
+    min-height: 758px;
+    padding: 50px 86px 55px 65px;
+}
+
+.add {
+    display: flex;
+    gap: 15px;
+    input[type="text"] {
+        border: 1px solid #9e78cf;
+        border-radius: 10px;
+        width: 381px;
+        height: 40px;
+        background: #1d1825;
+        padding: 0 15px;
+        color: #FFFFFF;
+        font-size: 14px;
+    }
+    button {
+        display: block;
+        border-radius: 10px;
+        width: 40px;
+        height: 40px;
+        background-color: #9e78cf;
+        border: none;
+        cursor: pointer;
+        &:active {
+            transform: scale(0.95);
+        }
+    }
+}
+
+h1 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    margin: 60px 0 17px 0;
+}
+
+.to-do {
+    .to-do-list {
+        list-style: none;
+        display: flex;
+        gap: 16px;
+        flex-direction: column;
+    }
+    .icons {
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+    }
+    button {
+        background-color: #15101c;
+        border: none;
+        cursor: pointer;
+        &:active {
+            transform: scale(0.95);
+        }
+    }
+}
+
+.done-list {
+    list-style: none;
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+    .text {
+        text-decoration: line-through;
+        color: #78cfb0;
+    }
+}
+
+.to-do__block {
+    padding: 20px;
+    font-size: 16px;
+    color: #9e78cf;
+    background: #15101c;
+    border-radius: 10px;
+    width: 432px;
+    height: 75px;
+    display: flex;
+    flex-direction: row;
+    gap: 101px;
+    justify-content: space-between;
+    align-items: center;
+}
